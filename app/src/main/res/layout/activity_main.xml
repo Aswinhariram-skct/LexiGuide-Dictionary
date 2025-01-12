@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="LexiGuide"
+            android:textColor="@color/primaryDark"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/search_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Enter any word"
+            app:boxStrokeColor="@color/primaryDark"
+            app:boxStrokeWidth="1dp"
+            app:hintTextColor="@color/primaryDark"
+            app:endIconMode="clear_text"
+            android:layout_marginTop="18dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/search_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:maxLines="1"
+                android:inputType="text"
+                android:imeOptions="actionSearch"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:lottie_rawRes="@raw/wel"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:adjustViewBounds="true"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"/>
+
+        <LinearLayout
+           android:id="@+id/lay"
+           android:visibility="gone"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+           <TextView
+               android:id="@+id/word"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal"
+               android:layout_marginTop="10dp"
+               android:fontFamily="@font/ubuntu_bold"
+               android:text="LexiGuide"
+               android:textColor="@color/primaryDark"
+               android:textSize="25sp"
+               android:textStyle="bold"/>
+
+           <androidx.cardview.widget.CardView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:layout_marginStart="20dp"
+               android:layout_marginEnd="20dp"
+               app:cardCornerRadius="20dp">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:orientation="vertical"
+                   android:padding="18dp"
+                   android:elevation="10dp">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Definition: "
+                       android:fontFamily="@font/ubuntu_bold"
+                       android:textSize="20sp"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Noun"
+                       android:layout_marginTop="10dp"
+                       android:fontFamily="@font/ubuntu_bold"
+                       android:textSize="15sp"/>
+                   <TextView
+                       android:id="@+id/noun_def"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="A number of people or things are put togethor consedered as a unit"
+                       android:layout_marginTop="10dp"
+                       android:fontFamily="sans-serif"
+                       android:textSize="15sp"/>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Verb"
+                       android:layout_marginTop="10dp"
+                       android:fontFamily="@font/ubuntu_bold"
+                       android:textSize="15sp"/>
+                   <TextView
+                       android:id="@+id/verb_def"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="A number of people or things are put togethor consedered as a unit"
+                       android:layout_marginTop="10dp"
+                       android:fontFamily="sans-serif"
+                       android:textSize="15sp"/>
+               </LinearLayout>
+           </androidx.cardview.widget.CardView>
+
+           <androidx.cardview.widget.CardView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="20dp"
+               android:layout_marginEnd="20dp"
+               android:layout_marginTop="20dp"
+               app:cardCornerRadius="20dp">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:orientation="vertical"
+                   android:padding="18dp"
+                   android:background="#98ADE8AF"
+                   android:elevation="10dp">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Synonyms: "
+                       android:textColor="#4CAF50"
+                       android:fontFamily="@font/ubuntu_bold"
+                       android:textSize="20sp"/>
+                   <TextView
+                       android:id="@+id/mean_txt"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Noun , aswin"
+                       android:textColor="@color/primaryDark"
+                       android:layout_marginTop="10dp"
+                       android:fontFamily="@font/ubuntu_bold"
+                       android:textSize="15sp"/>
+
+               </LinearLayout>
+           </androidx.cardview.widget.CardView>
+           <androidx.cardview.widget.CardView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="20dp"
+               android:layout_marginEnd="20dp"
+               android:layout_marginTop="20dp"
+               app:cardCornerRadius="20dp"
+               android:layout_marginBottom="20dp">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:orientation="vertical"
+                   android:padding="18dp"
+                   android:background="#FFECEC"
+                   android:elevation="10dp">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Antonyms: "
+                       android:textColor="#EB7B7B"
+                       android:lineHeight="20dp"
+                       android:fontFamily="@font/ubuntu_bold"
+                       android:textSize="20sp"/>
+                   <TextView
+                       android:id="@+id/opp_txt"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:lineHeight="20dp"
+                       android:text="A number of people or things are put togethor consedered as a unit"
+                       android:textColor="@color/primaryDark"
+                       android:layout_marginTop="10dp"
+                       android:fontFamily="@font/ubuntu_bold"
+                       android:textSize="15sp"/>
+
+
+
+               </LinearLayout>
+           </androidx.cardview.widget.CardView>
+
+       </LinearLayout>
+
+
+</LinearLayout>
+</LinearLayout>
