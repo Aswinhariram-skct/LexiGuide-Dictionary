@@ -30,3 +30,13 @@ LexiGuide is a powerful and user-friendly dictionary application that allows use
 2. Open the project in Android Studio.
 3. Sync Gradle and install dependencies.
 4. Build and run the app on your preferred emulator or Android device.
+
+## Images
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/1ea08d9b-b349-4d8c-8d41-88c986d287d4" alt="Lexi Image 1" width="300"></td>
+    <td><img src="https://github.com/user-attachments/assets/4d5e8953-8143-49ae-9744-3ed7f8a5b9b1" alt="Lexi Image 2" width="300"></td>
+    <td><img src="https://github.com/user-attachments/assets/1ff5d425-b2c8-478c-892e-27effdba48b9" alt="Lexi Image 3" width="300"></td>
+  </tr>
+</table>
+
